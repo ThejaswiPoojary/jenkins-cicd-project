@@ -27,9 +27,10 @@ pipeline {
         }
 
         stage('Install Dependencies') {
-            steps {
-                dir('app') {
-                    sh 'npm install'
+    		steps {
+       		 dir('app') {
+            		sh 'npm install'
+           		sh 'chmod +x node_modules/.bin/*'
                 }
             }
         }
