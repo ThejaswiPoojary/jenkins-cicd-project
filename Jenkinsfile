@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Container registry (Docker Hub, ECR, GCR, etc.)
-        REGISTRY        = 'docker.io/mydockerhubuser'
+        REGISTRY        = 'docker.io/thejaswikotian'
         IMAGE_NAME      = 'cicd-demo-app'
         IMAGE_TAG       = "${env.BUILD_NUMBER}-${env.GIT_COMMIT?.take(7) ?: 'local'}"
         FULL_IMAGE      = "${REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG}"

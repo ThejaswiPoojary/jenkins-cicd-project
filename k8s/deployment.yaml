@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: cicd-demo-app
-          image: docker.io/mydockerhubuser/cicd-demo-app:latest
+          image: docker.io/thejaswikotian/cicd-demo-app:latest
           ports:
             - containerPort: 3000
           resources:
